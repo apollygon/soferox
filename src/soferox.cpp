@@ -367,8 +367,12 @@ public:
 		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].nStartTime = 1484956800; // Jan 21, 2017
 		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].nTimeout = 1498003200; // Jun 21, 2017
 
-        // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000ffffffffffff");
+        /**
+        * The best chain should have at least this much work.
+        * Don't set a value bigger than 0 if blockchain doesn't have any blocks yet.
+        * Set your current ChainWork if you want nodes to wait until the whole blockchain is downloaded
+        */
+        consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000000002cb0ac72cf044034b93d43244501e496e55576aa5c5111bdc362"); //2035383
