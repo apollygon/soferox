@@ -406,7 +406,7 @@ public:
 		// }
 
 
-		genesis = CreateGenesisBlock(1530728779, 1069206, 0x1e0fffff, 112, 0);
+		genesis = CreateGenesisBlock(1532449604, 1394613, 0x1e0fffff, 112, 0);
 
         /**
          * Build the genesis block. Note that the output of its generation
@@ -431,7 +431,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
 		// printf("main_genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         // printf("main_genesis.merklroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-		assert(consensus.hashGenesisBlock == uint256S("0x000001b75fb6cfc7ee94f1552595c1e95ba4b149cbbb1d94bd05f23f2d432dce"));
+		assert(consensus.hashGenesisBlock == uint256S("0x00000cb4df2fa9b4d6bc09d9502ed67f23397fcd4064512695c8a752f85d3f5f"));
 		assert(genesis.hashMerkleRoot == uint256S("0x414d960e0ee8546bd482abc7d409c6d6f984ff7569b64750468386b70a0da1e5"));
 
         // vSeeds.push_back("soferox.org");
