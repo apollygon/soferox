@@ -442,7 +442,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,63); // guarantees the first character is S
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,125); // guarantees the first character is s
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,70); // guarantees the first character is B
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,190); // guarantees the first character is V
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
