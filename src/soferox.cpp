@@ -354,18 +354,18 @@ public:
 
 		// Deployment of BIP68, BIP112, and BIP113.
 		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1484956800; // Jan 21, 2017
-		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1498003200; // Jun 21, 2017
+		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1535500800; // Aug 29, 2018
+		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1546214400; // Dec 31, 2018
 
 		// Deployment of SegWit (BIP141 and BIP143)
 		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1484956800; // Jan 21, 2017
-		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1498003200; // Jun 21, 2017
+		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1535500800; // Aug 29, 2018
+		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1546214400; // Dec 31, 2018
 
 		// Deployment of BIP65
 		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].bit = 5;
-		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].nStartTime = 1484956800; // Jan 21, 2017
-		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].nTimeout = 1498003200; // Jun 21, 2017
+		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].nStartTime = 1535500800; // Aug 29, 2018
+		consensus.vDeployments[Consensus::DEPLOYMENT_BIP65].nTimeout = 1546214400; // Dec 31, 2018
 
         /**
         * The best chain should have at least this much work.
@@ -503,13 +503,13 @@ public:
 
 		// Deployment of BIP68, BIP112, and BIP113.
 		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1484956800; // Jan 21, 2017
-		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1498003200; // Jun 21, 2017
+		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1535500800; // Aug 29, 2018
+		consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1546214400; // Dec 31, 2018
 
 		// Deployment of SegWit (BIP141, BIP143, and BIP147)
 		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1484956800; // Jan 21, 2017
-		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1498003200; // Jun 21, 2017
+		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1535500800; // Aug 29, 2018
+		consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1546214400; // Dec 31, 2018
 
 		consensus.powLimit = uint256S("000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
 
