@@ -314,6 +314,8 @@ libsoferox_consensus_a_SOURCES = \
   script/script.h \
   script/script_error.cpp \
   script/script_error.h \
+  script/parsehelper.h \
+  script/parsehelper.cpp \
   serialize.h \
   tinyformat.h \
   uint256.cpp \
