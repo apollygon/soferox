@@ -310,8 +310,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 *   vMerkleTree: 4a5e1e
 */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward) {
-	const char* pszTimestamp = "We always make good coin and future with perfect quality";
-	const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
+	const char* pszTimestamp = "soforex is reborn";
+	const CScript genesisOutputScript = CScript() << ParseHex("c76593ce5f99d8c9c612329184753d98025c2435d23cc8d5cc94c0e2e6d98b58661d1eb2ac9fd23fe88a105362493682c017c5f5f53da096b5b29d2d1668477663") << OP_CHECKSIG;
 	return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -406,7 +406,7 @@ public:
 		// }
 
 
-		genesis = CreateGenesisBlock(1537197711, 475135, 0x1e0fffff, 112, 0);
+		genesis = CreateGenesisBlock(1538313081, 247346, 0x1e0fffff, 112, 0);
 
         /**
          * Build the genesis block. Note that the output of its generation
@@ -431,8 +431,8 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
 		// printf("main_genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         // printf("main_genesis.merklroot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-		assert(consensus.hashGenesisBlock == uint256S("0x000001731d9008f70a929cb01e2e7d6403e3b17f25360c43421bf34ad5316109"));
-		assert(genesis.hashMerkleRoot == uint256S("0x7561b273ff730b41f39f620336b70456874cc51aa1622e745e23d1f1f263db8d"));
+		assert(consensus.hashGenesisBlock == uint256S("0x00000f4df9cde5b0a3dbcf1d333c6fcd9d780753111d3c2b8ef1677b2110a708"));
+		assert(genesis.hashMerkleRoot == uint256S("0x622c9c1198e2282f6924c1d9823f41d04d360b6a75d90cbcdcc9e8d53d40f5d6"));
 
         // vSeeds.push_back("soferox.org");
 		// vSeeds.push_back("electrum1.soferox.org");
